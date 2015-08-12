@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form id="form1" action="" method="get">
+		<input type="submit" value="log in" onclick="log();" > <br> 
+		<input type="submit" value="register" onclick="register();">
+	</form>
+	<script type="text/javascript">
+		var formAction = document.getElementById("form1");
+		function log() {
+			formAction.setAttribute("action", "clientLogIn.html");
+		}
+		function register() {
+			formAction.setAttribute("action", "ClientOnlineRegistration.html");
+		}
+	</script>
+</body>
+</html>
